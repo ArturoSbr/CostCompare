@@ -54,7 +54,7 @@
             </select>
         </div>
         <p class="text-xs text-gray-500">
-            Prices normalize to this base unit automatically when comparing.
+            Pick your favorite unit to compare by.
         </p>
     </div>
 
