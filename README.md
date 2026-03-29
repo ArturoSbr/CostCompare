@@ -1,42 +1,27 @@
-# sv
+# CostCompare 🛒
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Ever stood in the aisle at Costco trying to figure out if the 900g jar of 
+peanuts is actually cheaper than the 2lb tub? Yeah, me too.
 
-## Creating a project
+CostCompare is a lightweight, offline-first web app that solves that exact 
+problem. You just plug in the prices, quantities, and units (mass, volume, 
+or count) for a few items, and it spits out a ranked list showing you the 
+actual best value.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Tech Stack
+- **Framework:** SvelteKit (Svelte 5 Runes)
+- **Styling:** Tailwind CSS v4
+- **Storage:** Dexie.js (IndexedDB so it works completely offline)
+- **Logic:** `convert` package handling the Costco math
 
-```sh
-# create a new project
-npx sv create my-app
-```
+## Running it Locally
 
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv@0.13.0 create --template minimal --types ts --add tailwindcss="plugins:none" --no-install temp_app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Want to spin it up yourself? It's easy:
 
 ```sh
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+That's it. It's free, open source (MIT), and built to run directly on your 
+phone as a PWA.
